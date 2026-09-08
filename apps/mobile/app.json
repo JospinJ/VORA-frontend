@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "VORA",
+    "slug": "vora-mobile",
+    "version": "1.0.0",
+    "icon": "./assets/brand/vora-logo.png",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "vora",
+    "assetBundlePatterns": ["**/*"],
+    "android": { "package": "cm.tiger.vora" },
+    "ios": { "bundleIdentifier": "cm.tiger.vora" },
+    "plugins": [
+      "expo-status-bar",
+      "expo-font",
+      "expo-asset",
+      "expo-web-browser",
+      ["expo-image-picker", { "photosPermission": "VORA utilise votre galerie pour votre photo de profil.", "cameraPermission": "VORA utilise la caméra pour votre photo de profil." }],
+      ["expo-location", { "locationWhenInUsePermission": "VORA utilise votre position pour afficher votre carte et calculer les trajets." }],
+      "expo-secure-store",
+      "expo-local-authentication",
+      "expo-notifications"
+    ]
+  }
+}
